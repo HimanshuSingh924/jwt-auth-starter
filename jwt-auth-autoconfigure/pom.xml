@@ -9,6 +9,7 @@
         <groupId>com.devlib</groupId>
         <artifactId>jwt-auth-starter-parent</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>jwt-auth-autoconfigure</artifactId>

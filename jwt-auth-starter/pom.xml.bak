@@ -23,8 +23,8 @@
 
         This is identical to how spring-boot-starter-web works.
     -->
-    <packaging>pom</packaging>
-	<!-- <packaging>jar</packaging> -->
+    <!--<packaging>pom</packaging>-->
+	<packaging>jar</packaging>
 
     <dependencies>
         <!-- All logic lives here — pulled in transitively -->
