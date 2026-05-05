@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.devlib</groupId>
+        <artifactId>jwt-auth-starter-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>jwt-auth-starter</artifactId>
+    <name>JWT Auth Starter</name>
+
+    <!--
+        pom packaging = this module produces NO JAR itself.
+        It acts as a "bill of materials" — when consumers add this dependency,
+        Maven's transitive resolution pulls in jwt-auth-autoconfigure and
+        all its dependencies automatically.
+
+        This is identical to how spring-boot-starter-web works.
+    -->
+    <!--<packaging>pom</packaging>-->
+	<packaging>jar</packaging>
+
+    <dependencies>
+        <!-- All logic lives here — pulled in transitively -->
+        <dependency>
+            <groupId>com.devlib</groupId>
+            <artifactId>jwt-auth-autoconfigure</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

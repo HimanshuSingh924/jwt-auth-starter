@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "auth.jwt",
+      "type": "com.devlib.auth.config.JwtProperties",
+      "sourceType": "com.devlib.auth.config.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "auth.jwt.expiration",
+      "type": "java.lang.Long",
+      "description": "Token validity in milliseconds. Default: 86400000 (24 hours).",
+      "sourceType": "com.devlib.auth.config.JwtProperties",
+      "defaultValue": 86400000
+    },
+    {
+      "name": "auth.jwt.header-name",
+      "type": "java.lang.String",
+      "description": "HTTP header name containing the JWT token. Default: Authorization",
+      "sourceType": "com.devlib.auth.config.JwtProperties",
+      "defaultValue": "Authorization"
+    },
+    {
+      "name": "auth.jwt.public-endpoints",
+      "type": "java.lang.String[]",
+      "description": "Ant-style URL patterns that bypass JWT authentication.",
+      "sourceType": "com.devlib.auth.config.JwtProperties",
+      "defaultValue": [
+        "\/api\/auth\/**",
+        "\/actuator\/health"
+      ]
+    },
+    {
+      "name": "auth.jwt.secret",
+      "type": "java.lang.String",
+      "description": "Base64-encoded HMAC-SHA256 signing secret. Min 32 characters. Use environment variables in production.",
+      "sourceType": "com.devlib.auth.config.JwtProperties",
+      "defaultValue": "dGhpcy1pcy1hLXNlY3VyZS1qd3Qtc2VjcmV0LWtleS1mb3ItZGV2bGliLXN0YXJ0ZXIh"
+    },
+    {
+      "name": "auth.jwt.token-prefix",
+      "type": "java.lang.String",
+      "description": "Prefix before JWT in Authorization header. Default: Bearer",
+      "sourceType": "com.devlib.auth.config.JwtProperties",
+      "defaultValue": "Bearer"
+    }
+  ],
+  "hints": []
+}
