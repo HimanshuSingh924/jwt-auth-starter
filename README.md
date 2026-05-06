@@ -77,7 +77,7 @@ Wait for:
 ```
 [INFO] BUILD SUCCESS
 ```
-
+### Note: You are to skip this above Step 1 to install the library locally, Diractly continue with Step 2
 ---
 
 ### Step 2 — Add Dependency to Your Project
