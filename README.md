@@ -1,3 +1,6 @@
+[![](https://jitpack.io/v/HimanshuSingh924/jwt-auth-starter.svg)](https://jitpack.io/#HimanshuSingh924/jwt-auth-starter)
+
+Use the latest version from the badge above 👆
 # 🔐 JWT Auth Starter
 ### A Custom Spring Boot Starter for Zero-Boilerplate JWT Security
 
